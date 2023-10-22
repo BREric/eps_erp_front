@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,FormGroup } from '@angular/forms';
+import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import { AdministradorService } from './services/administrador/administrador.service';
 import { AtencionService } from './services/atencion/atencion.service';
 import { CitaService } from './services/cita/cita.service';
@@ -22,7 +22,7 @@ import { PqrsService } from './services/pqrs/pqrs.service';
 export class AppComponent implements OnInit{
   title = 'eps_erp';
   epsForm: FormGroup;
-
+  loginForm: FormGroup;
   constructor(
     public fb: FormBuilder,
     public administradorService:AdministradorService,
@@ -39,8 +39,9 @@ export class AppComponent implements OnInit{
 
   }
   ngOnInit(): void {
-    this.epsForm = this.fb.group({
-
+    this.loginForm = this.fb.group({
+      correo : ['',Validators.required],
+      password : ['',Validators.required]
     })
   }
 }
