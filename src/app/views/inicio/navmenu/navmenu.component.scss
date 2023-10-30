@@ -1,7 +1,21 @@
-.active-link {
-    background-color: #ccc;
+// Define colores personalizados
+$primary-color: #ffffff; // Color de las letras del menú
+$background-color: #0077B6; // Color de fondo del menú
+$selected-color: #34495E; // Color de la opción seleccionada
+// Estilo personalizado para el menú
+.navbar-custom {
+    background-color: $background-color;
 }
 
-.active-link a {
-    background-color: green;
+.navbar-custom .nav-link {
+    color: $primary-color;
+    margin-right: 20px; // Espaciado entre las opciones
+    font-weight: bold; // Texto en negrita
+    text-transform: uppercase; // Texto en mayúsculas
+}
+
+.navbar-custom .nav-link.active-link {
+    background-color: $selected-color;
+    color: #fff;
+    border-radius: 4px; // Bordes redondeados en la opción seleccionada
 }
