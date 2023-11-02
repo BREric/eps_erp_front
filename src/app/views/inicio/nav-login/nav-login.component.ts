@@ -7,6 +7,9 @@ import { Router } from '@angular/router'; // Importa el módulo Router
   styleUrls: ['./nav-login.component.scss']
 })
 export class NavLoginComponent {
+goToSignUp() {
+  this.router.navigate(['/signup']);
+}
   constructor(private router: Router) {}
 
   goToLogin() {
