@@ -1,21 +1,23 @@
-// Define colores personalizados
-$primary-color: #ffffff; // Color de las letras del menú
-$background-color: #0077B6; // Color de fondo del menú
-$selected-color: #34495E; // Color de la opción seleccionada
-// Estilo personalizado para el menú
-.navbar-custom {
-    background-color: $background-color;
+/* nav.menu.component.scss */
+.navbar.navbar-light.bg-light {
+    background-color: #0077B6 !important; // Cambia 'blue' al color azul que prefieras.
 }
 
-.navbar-custom .nav-link {
-    color: $primary-color;
-    margin-right: 20px; // Espaciado entre las opciones
-    font-weight: bold; // Texto en negrita
-    text-transform: uppercase; // Texto en mayúsculas
+.navbar-brand-container {
+    position: absolute;
+    right: 0;
 }
 
-.navbar-custom .nav-link.active-link {
-    background-color: $selected-color;
-    color: #fff;
-    border-radius: 4px; // Bordes redondeados en la opción seleccionada
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .nav-link {
+        color: #ffffff;
+    }
+
+    .active {
+        color: #34495E;
+    }
 }

@@ -1,0 +1,39 @@
+/* signup.component.scss */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; // Ajusta esto según tus necesidades
+    background-color: white; // Color de fondo, cambia esto según tus preferencias
+}
+
+.signup-form {
+    width: 500px; // Ajusta esto según tus necesidades
+    padding: 50px;
+    border-radius: 15px;
+    background-color: white;
+
+    // Estilos para los campos del formulario
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    // Estilos para el botón de envío
+    button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 2cm;
+        color: white;
+        background-color: #0077B6; // Color del botón, cambia esto según tus preferencias
+    }
+
+    .already-account {
+        color: gray;
+        text-decoration: underline;
+    }
+}

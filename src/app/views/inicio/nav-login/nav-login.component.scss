@@ -1,52 +1,25 @@
-// Estilo personalizado para el componente NavLogin
-.navbar-light-custom {
-    background-color: #34495E;
-    border-bottom: 1px solid #e0e0e0; // Línea divisoria sutil
-}
+/* nav.menu.component.scss */
+.navbar {
+    background-color: #34495E; // Cambia 'blue' al color azul que prefieras.
+    height: 50px; // Ajusta este valor a la altura que prefieras.
 
-.login-button {
-    background-color: #4267B2;
-    color: #fff;
-    padding: 10px 20px; // Espaciado interior ligeramente aumentado
-    border: none;
-    border-radius: 4px; // Bordes redondeados
-    cursor: pointer;
-    transition: background-color 0.3s; // Transición suave al pasar el mouse
-}
+    .navbar-brand-container {
+        position: absolute;
+        right: 0;
+    }
 
-.signup-button {
-    background-color: #4267B2;
-    color: #fff;
-    padding: 10px 20px; // Espaciado interior ligeramente aumentado
-    border: none;
-    border-radius: 4px; // Bordes redondeados
-    cursor: pointer;
-    transition: background-color 0.3s; // Transición suave al pasar el mouse
-}
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
 
-.login-button:hover {
-    background-color: #345991; // Color de fondo cuando se pasa el mouse
-}
+        .nav-link {
+            color: #ffffff;
+            line-height: 50px; // Asegúrate de que este valor sea igual a la altura de .navbar.
+        }
 
-.forgot-account-link {
-    color: #4267B2;
-    text-decoration: none;
-    margin: 0 15px; // Espacio entre el botón y el enlace
-    font-weight: bold; // Texto en negrita
-}
-
-.forgot-account-link:hover {
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.custom-right-align {
-    position: absolute;
-    top: 0;
-    right: 0;
+        .active {
+            color: #007bff;
+        }
+    }
 }

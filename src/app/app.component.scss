@@ -1,16 +1,7 @@
-.custom-right-align {
-    position: absolute;
-    top: 0;
-    right: 0;
-    // width: 100%;
-}
-
-.menu_primero {
-    z-index: 1;
-    height: 1000px;
-}
-
-.menu_segundo {
-    z-index: 2;
-    //margin-top: ;
-}
+/* app.component.scss */
+@import 'src/app/views/inicio/nav-login/nav-login.component.scss';
+@import 'src/app/views/inicio/navmenu/navmenu.component.scss';
+@import 'src/app/views/inicio/signup/signup.component.scss';
+@import 'src/app/views/inicio/login/login.component.scss';
+@import 'src/app/views/inicio/forgotpassword/forgotpassword.component.scss';
+@import 'src/app/views/inicio/home/home.component.scss';

@@ -1,19 +1,21 @@
-<form>
-    <div>
-        <label>Nombre: </label>
-        <input type="text" name="nombre" />
-    </div>
-    <div>
-        <label>Email: </label>
-        <input type="text" name="email" />
-    </div>
-    <div>
-        <label>Teléfono: </label>
-        <input type="text" name="telefono" />
-    </div>
-    <div>
-        <label>Contraseña: </label>
-        <input type="password" name="password" />
-    </div>
-    <button type="submit">Registrarse</button>
-</form>
+<div class="signup-container">
+    <form class="signup-form">
+        <h2>Registrarse</h2>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nombre de usuario" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </div>
+        <p class="text-center"><a href="/login" class="already-account">¿Ya tienes una cuenta?</a></p>
+    </form>
+</div>
