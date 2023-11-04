@@ -1,4 +1,5 @@
 /* login.component.scss */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .login-container {
     display: flex;
@@ -13,9 +14,15 @@
     padding: 50px;
     border-radius: 15px;
     background-color: white;
+    
+    // Aplica la animación a cada elemento del formulario
+    * {
+        animation: slide-up 1s ease forwards;
+    }
 }
- // Estilos para los campos del formulario
- input {
+
+// Estilos para los campos del formulario
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -28,7 +35,7 @@ button {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    border: 2cm;
+    border: 2px solid; // Asegúrate de especificar un color para el borde
     color: white;
     background-color: #0077B6; // Color del botón, cambia esto según tus preferencias
 }
@@ -42,4 +49,15 @@ button {
 .small-checkbox {
     width: 15px;
     height: 15px;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
