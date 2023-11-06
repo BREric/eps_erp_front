@@ -21,8 +21,8 @@ import { PqrsService } from './services/pqrs/pqrs.service';
 })
 export class AppComponent implements OnInit{
   title = 'eps_erp';
-  epsForm: FormGroup;
-  loginForm: FormGroup;
+  // epsForm: FormGroup;
+
   constructor(
     public fb: FormBuilder,
     public administradorService:AdministradorService,
@@ -39,9 +39,6 @@ export class AppComponent implements OnInit{
 
   }
   ngOnInit(): void {
-    this.loginForm = this.fb.group({
-      correo : ['',Validators.required],
-      password : ['',Validators.required]
-    })
+
   }
 }

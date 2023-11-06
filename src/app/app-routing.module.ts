@@ -30,7 +30,9 @@ const routes: Routes = [
   { path: 'signup' , component: SignupComponent},
   { path: 'forgotpassword' , component: ForgotpasswordComponent},
   { path: 'contact' , component: ContactComponent},
-  { path: '**' , component: PagenotfoundComponent}
+  { path: 'login', component: LoginComponent },
+  { path: '**' , component: PagenotfoundComponent},
+
 
 ];
 
