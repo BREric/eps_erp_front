@@ -7,7 +7,7 @@ import { Cuenta } from 'src/app/model/cuenta';
   providedIn: 'root'
 })
 export class CuentaService {
-  private baseURL = "http://localhost:8081/cuentas/login";
+  private baseURL = "http://localhost:8081/cuentas/login/";
   constructor(private httpClient: HttpClient) { }
 
   login(cuenta: Cuenta):Observable<object>{
