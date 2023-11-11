@@ -1,0 +1,78 @@
+/* signup.component.scss */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh; // Ajusta esto según tus necesidades
+    background-color: white; // Color de fondo, cambia esto según tus preferencias
+    border-left: 1px solid #000;
+}
+
+.blog-form {
+    width: 500px; // Ajusta esto según tus necesidades
+    padding: 50px;
+    border-radius: 15px;
+    background-color: white;
+     // Aplica la animación a cada elemento del formulario
+     * {
+        animation: slide-up 1s ease forwards;
+    }
+
+    // Estilos para los campos del formulario
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    // Estilos para el botón de envío
+    button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 2cm;
+        color: white;
+        background-color: #0077B6; // Color del botón, cambia esto según tus preferencias
+    }
+
+    .already-account {
+        color: gray;
+        text-decoration: underline;
+    }
+
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    // Aplica la animación a cada elemento del formulario
+    * {
+        animation: slide-up 1s ease forwards;
+    }
+}
+
+.container{
+    flex: 1;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

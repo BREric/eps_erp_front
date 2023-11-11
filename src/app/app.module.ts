@@ -22,6 +22,7 @@ import { ForgotpasswordComponent } from './views/inicio/forgotpassword/forgotpas
 import { ContactComponent } from './views/inicio/contact/contact.component';
 import { NavLoginComponent } from './views/inicio/nav-login/nav-login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { NavLoginComponent } from './views/inicio/nav-login/nav-login.component'
     SignupComponent,
     ForgotpasswordComponent,
     ContactComponent,
-    NavLoginComponent
+    NavLoginComponent,
   ],
   imports: [
     BrowserModule,

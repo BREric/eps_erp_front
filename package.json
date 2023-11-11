@@ -2,12 +2,10 @@
     "name": "epserpfront",
     "version": "0.0.0",
     "scripts": {
-
         "start": "ts-node src/index.ts",
         "dev": "tsc && node dist/index.js",
         "build": "tsc",
         "ng": "ng",
-
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
     },

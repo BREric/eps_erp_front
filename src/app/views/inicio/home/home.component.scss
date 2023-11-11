@@ -20,6 +20,7 @@
         opacity: 0;
         animation: slide-up 1s ease 0.5s forwards;
         display: block;
+        text-align: center;
     }
 
 
@@ -34,3 +35,22 @@
         }
     }
 }
+
+
+.home-form {
+    width: 500px; // Ajusta esto según tus necesidades
+    padding: 50px;
+    height: 90vh;
+     // Aplica la animación a cada elemento del formulario
+     * {
+        animation: slide-up 1s ease forwards;
+    }
+}
+
+.links-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}   
+

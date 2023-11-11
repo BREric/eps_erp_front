@@ -3,11 +3,33 @@
 
 .signup-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80vh; // Ajusta esto según tus necesidades
     background-color: white; // Color de fondo, cambia esto según tus preferencias
+    border-left: 1px solid #000;
 }
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    // Aplica la animación a cada elemento del formulario
+    * {
+        animation: slide-up 1s ease forwards;
+    }
+}
+
+.container{
+    flex: 1;
+}
+
 
 .signup-form {
     width: 500px; // Ajusta esto según tus necesidades

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.contact-info {
+    width: 80%;
+    margin: 0 auto;
+    
+
+    h2 {
+        color: #0077B6;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #34495E;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        
+        line-height: 1.6;
+    }
+
+    a {
+        color: #337ab7;
+        text-decoration: none;
+        margin-right: 40px;
+
+        &:hover, :last-child {
+            color: #23527c;
+            margin-right: 0;
+        }
+    }
+
+    // Aplica la animación a cada elemento del formulario
+    * {
+        animation: slide-up 1s ease forwards;
+    }
+   
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

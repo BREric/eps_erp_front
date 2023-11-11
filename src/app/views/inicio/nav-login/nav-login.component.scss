@@ -8,6 +8,11 @@
         right: 0;
     }
 
+    .logo {
+        height: 3em; // Ajusta este valor al tamaño que prefieras.
+        width: auto;
+    }
+
     .navbar-nav {
         display: flex;
         justify-content: center;
