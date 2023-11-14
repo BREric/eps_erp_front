@@ -1,0 +1,24 @@
+/* nav.menu.component.scss */
+.navbar.navbar-light.bg-light {
+    background-color: #0077B6 !important; // Cambia 'blue' al color azul que prefieras.
+  }
+  
+  .navbar-brand-container {
+    position: absolute;
+    right: 0;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  
+    .nav-link {
+        color: #ffffff;
+    }
+  
+    .active {
+        color: #34495E;
+    }
+  }
+  

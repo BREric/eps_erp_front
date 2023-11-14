@@ -1,0 +1,77 @@
+/* Restablece los márgenes y el relleno del cuerpo y del elemento html a 0, y establece su ancho y altura al 100% */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  
+  .container {
+    /* Posiciona el contenedor de manera relativa para permitir el posicionamiento absoluto de los elementos hijos si es necesario */
+    position: relative;
+    //width: 100%;
+    height: 100vh;
+    background-image: url('/assets/admin-fondo.jpg') ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+     // Aplica la animación a cada elemento del formulario
+     * {
+        animation: slide-up 1s ease forwards;
+    }
+  
+    .title {
+      /* Aumenta el tamaño de la fuente del título */
+      font-size: 2em;
+      /* Agrega una sombra de texto para mejorar la legibilidad contra la imagen de fondo */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    .label {
+      /* Aumenta el tamaño de la fuente de la etiqueta */
+      font-size: 1.5em;
+      /* Agrega un margen inferior para separar la etiqueta de los botones */
+      margin-bottom: 20px;
+      /* Agrega una sombra de texto para mejorar la legibilidad contra la imagen de fondo */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    .buttons {
+      /* Configura los botones como una caja flexible para distribuirlos uniformemente */
+      display: flex;
+      /* Agrega un espacio entre los botones */
+      gap: 20px;
+  
+      .btn {
+        /* Estiliza los botones */
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.5s ease;
+
+        
+  
+        /* Cambia el color de fondo de los botones al pasar el cursor sobre ellos */
+        &:hover {
+          background-color: #0056b3;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  @keyframes slide-up {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

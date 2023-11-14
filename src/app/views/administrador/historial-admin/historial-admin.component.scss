@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.historial {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+
+    // Aplica la animación a cada elemento del formulario
+    * {
+      animation: slide-up 1s ease forwards;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .consulta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .fecha, .paciente {
+      font-size: 18px;
+      color: #666;
+    }
+  }
+}
+@keyframes slide-up {
+  0% {
+      transform: translate-X(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translate-X(0);
+      opacity: 1;
+  }
+}
+

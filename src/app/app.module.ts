@@ -21,6 +21,15 @@ import { SignupComponent } from './views/inicio/signup/signup.component';
 import { ForgotpasswordComponent } from './views/inicio/forgotpassword/forgotpassword.component';
 import { ContactComponent } from './views/inicio/contact/contact.component';
 import { NavLoginComponent } from './views/inicio/nav-login/nav-login.component';
+import { MenuAdminComponent } from './views/administrador/menu-admin/menu-admin.component';
+import { PqrsAdminComponent } from './views/administrador/pqrs-admin/pqrs-admin.component';
+import { NavmenuAdminComponent } from './views/administrador/navmenu-admin/navmenu-admin.component';
+import { NavlogoAdminComponent } from './views/administrador/navlogo-admin/navlogo-admin.component';
+import { AdminLayoutComponent } from './views/administrador/admin-layout/admin-layout.component';
+import { HomeLayoutComponent } from './views/inicio/home-layout/home-layout.component';
+import { GestionAdminComponent } from './views/administrador/gestion-admin/gestion-admin.component';
+import { HistorialAdminComponent } from './views/administrador/historial-admin/historial-admin.component';
+import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
 
 
 @NgModule({
@@ -42,6 +51,15 @@ import { NavLoginComponent } from './views/inicio/nav-login/nav-login.component'
     ForgotpasswordComponent,
     ContactComponent,
     NavLoginComponent,
+    MenuAdminComponent,
+    PqrsAdminComponent,
+    NavmenuAdminComponent,
+    NavlogoAdminComponent,
+    AdminLayoutComponent,
+    HomeLayoutComponent,
+    GestionAdminComponent,
+    HistorialAdminComponent,
+    ConfiguracionAdminComponent,
   ],
   imports: [
     BrowserModule,

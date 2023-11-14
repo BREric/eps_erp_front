@@ -13,6 +13,15 @@ import { ForgotpasswordComponent } from './views/inicio/forgotpassword/forgotpas
 import { SignupComponent } from './views/inicio/signup/signup.component';
 import { LoginComponent } from './views/inicio/login/login.component';
 import { ContactComponent } from './views/inicio/contact/contact.component';
+import { MenuAdminComponent } from './views/administrador/menu-admin/menu-admin.component';
+import { PqrsAdminComponent } from './views/administrador/pqrs-admin/pqrs-admin.component';
+import { NavmenuComponent } from './views/inicio/navmenu/navmenu.component';
+import { NavLoginComponent } from './views/inicio/nav-login/nav-login.component';
+import { GestionAdminComponent } from './views/administrador/gestion-admin/gestion-admin.component';
+import { HistorialAdminComponent } from './views/administrador/historial-admin/historial-admin.component';
+import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
+import { NavlogoAdminComponent } from './views/administrador/navlogo-admin/navlogo-admin.component';
+import { NavmenuAdminComponent } from './views/administrador/navmenu-admin/navmenu-admin.component';
 
 // Rutas de navegacion
 
@@ -30,8 +39,13 @@ const routes: Routes = [
   { path: 'signup' , component: SignupComponent},
   { path: 'forgotpassword' , component: ForgotpasswordComponent},
   { path: 'contact' , component: ContactComponent},
-  { path: 'login', component: LoginComponent },
-  { path: '**' , component: PagenotfoundComponent},
+  { path: 'administrador' , component: MenuAdminComponent},
+  { path: 'administrador/pqrs' , component: PqrsAdminComponent},
+  { path: 'administrador/gestion' , component: GestionAdminComponent},
+  { path: 'administrador/historial' , component: HistorialAdminComponent},
+  { path: 'administrador/configuracion' , component: ConfiguracionAdminComponent},
+  { path: '**' , component: PagenotfoundComponent}
+ 
 
 
 ];

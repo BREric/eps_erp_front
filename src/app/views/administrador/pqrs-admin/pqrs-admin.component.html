@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="table-container">
+      <h2 class="table-title">PQRS Registradas</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre del Paciente</th>
+            <th>Consulta Asociada</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luis Alvarez</td>
+            <td>150512</td>
+            <td>En progreso</td>
+          </tr>
+          <tr>
+            <td>Felipe Ramirez</td>
+            <td>457896</td>
+            <td>Resuelta</td>
+          </tr>
+          <tr>
+            <td>Lorena Valencia</td>
+            <td>779965</td>
+            <td>En progreso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <form class="pqrs-form">
+      <h2 class="form-title">Registrar PQRS</h2>
+  
+      <div class="form-group">
+        <label for="patient-name">Nombre del Paciente</label>
+        <input type="text" id="patient-name" placeholder="Ingrese el nombre del paciente">
+      </div>
+  
+      <div class="form-group">
+        <label for="associated-consultation">Consulta Asociada</label>
+        <input type="text" id="associated-consultation" placeholder="Ingrese el número de consulta">
+      </div>
+  
+      <div class="form-group">
+        <label for="status">Estado</label>
+        <select id="status">
+          <option value="en-progreso">En progreso</option>
+          <option value="resuelta">Resuelta</option>
+          <option value="Archivado">Archivado</option>
+          <option value="nuevo">Nuevo</option>
+        </select>
+      </div>
+  
+      <button type="submit" class="submit-btn">Registrar PQRS</button>
+    </form>
+  </div>
+  

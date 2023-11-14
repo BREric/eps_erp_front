@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="table-container">
+        <h2 class="table-title">Médicos Registrados</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Especialización</th>
+              <th>Hora de Inicio</th>
+              <th>Hora de Fin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Samuel Alvarez</td>
+              <td>Cardiologo</td>
+              <td>9:00 a.m</td>
+              <td>4:00 p.m</td>
+            </tr>
+            <tr>
+              <td>Juan Ramirez</td>
+              <td>Cardiologo</td>
+              <td>8:00 a.m</td>
+              <td>6:00 p.m</td>
+            </tr>
+            <tr>
+              <td>Jhojan Valencia</td>
+              <td>Medico general</td>
+              <td>7:00 a.m</td>
+              <td>6:00 p.m</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+  
+    <form class="doctor-form">
+      <h2 class="form-title">Registrar un Médico</h2>
+  
+      <div class="form-group">
+        <label for="name">Nombre del Médico</label>
+        <input type="text" id="name" placeholder="Ingrese el nombre del médico">
+      </div>
+  
+      <div class="form-group">
+        <label for="status">Especialización</label>
+        <select id="status">
+          <option value="Cardiologia">Cardiologia</option>
+          <option value="Pediatría">Pediatría</option>
+          <option value="Oncología">Oncología</option>
+          <option value="Neurología">Neurología</option>
+          <option value="Ortopedía">Ortopedía</option>
+          <option value="Cirugía">Cirugía plástica</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Ingrese el Email del médico">
+      </div>
+
+      <div class="form-group">
+        <label for="contraseña">Contraseña</label>
+        <input type="text" id="contraseña" placeholder="Ingrese la cedula para el médico">
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" placeholder="Ingrese el teléfono del médico">
+      </div>
+
+      <div class="form-group">
+        <label for="ciudad">Ciudad de residencia</label>
+        <input type="text" id="ciudad" placeholder="Ingrese la ciudad de residencia del médico">
+      </div>
+
+      <div class="form-group">
+        <label for="cedula">Cedula</label>
+        <input type="text" id="cedula" placeholder="Ingrese la cedula del médico">
+      </div>
+
+      <div class="form-group">
+        <label for="start-time">Hora de Inicio de la Jornada</label>
+        <input type="time" id="start-time">
+      </div>
+  
+      <div class="form-group">
+        <label for="end-time">Hora de Fin de la Jornada</label>
+        <input type="time" id="end-time">
+      </div>
+  
+      <button type="submit" class="submit-btn">Registrar Médico</button>
+    </form>
+  </div>
+  
