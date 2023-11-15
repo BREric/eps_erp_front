@@ -114,6 +114,18 @@
    * {
     animation: slide-up 1s ease forwards;
 }
+
+label[for="btn-modal"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0076b675;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+    
+  }
  
 
   .table-container {
@@ -162,20 +174,6 @@
         }
       }
 
-      label[for="btn-modal"] {
-        padding: 10px 20px;
-        font-size: 1em;
-        color: #fff;
-        background-color: #0077B6;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      
-        &:hover {
-          background-color: #0056b3;
-        }
-      }
       
 
       tbody td{
@@ -206,10 +204,6 @@
     .form-group {
       margin-bottom: 15px;
 
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
 
       input, select {
         width: 100%;
@@ -232,6 +226,7 @@
   width: 100%;
   padding: 10px;
   border: none;
+  margin-top: 50px;
   border-radius: 15px;
   background-color: #0077B6;
   color: #fff;

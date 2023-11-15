@@ -7,6 +7,7 @@
             <th>Nombre del Paciente</th>
             <th>Consulta Asociada</th>
             <th>Estado</th>
+            <th>Detalles</th>
           </tr>
         </thead>
         <tbody>
@@ -14,21 +15,46 @@
             <td>Luis Alvarez</td>
             <td>150512</td>
             <td>En progreso</td>
+            <td>
+              <label for="btn-modal">Detalles</label>
+            </td>
           </tr>
           <tr>
             <td>Felipe Ramirez</td>
             <td>457896</td>
             <td>Resuelta</td>
+            <td>
+              <label for="btn-modal">Detalles</label>
+            </td>
           </tr>
           <tr>
             <td>Lorena Valencia</td>
             <td>779965</td>
             <td>En progreso</td>
+            <td>
+              <label for="btn-modal">Detalles</label>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
-  
+
+    <input type="checkbox" id = "btn-modal">
+    <div class = "container-modal">
+      <div class = "content-modal">
+        <h2>Detalles de la PQRS</h2>
+        <p> Aqui va el detalle de la PQRS</p>
+        <input type="text" id="text-respuesta" placeholder= "Aqui puedes respoder la PQRS">
+        <div class = "btn-cerrar">
+          <label for="btn-modal">Cerrar</label>
+          <label for="btn-respuesta">Responder</label>
+        </div>
+      </div>
+
+      <label for = "btn-modal" class = "cerrar-modal">
+      </label>
+
+    </div>
     <form class="pqrs-form">
       <h2 class="form-title">Registrar PQRS</h2>
   

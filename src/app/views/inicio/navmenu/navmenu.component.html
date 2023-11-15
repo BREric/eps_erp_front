@@ -17,6 +17,25 @@
     </div>
 </nav>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center" *ngIf="showMenuPaciente">
+    <div class="navbar-brand-container">     
+    </div>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" routerLink="/paciente" routerLinkActive="active">
+                <i class="fa-solid fa-house"></i> Home paciente
+            </a>
+            <a class="nav-item nav-link" routerLink="/paciente/citas" routerLinkActive="active">
+                <i class="fa-solid fa-hospital-user"></i> Citas</a>
+            <a class="nav-item nav-link" routerLink="/paciente/pqrs" routerLinkActive="active">
+                <i class="fa-solid fa-person-circle-question"></i> PQRS</a>
+            <a class="nav-item nav-link" routerLink="/paciente/historial" routerLinkActive="active">
+                <i class="fa-solid fa-notes-medical"></i> Historal</a>
+            
+        </div>
+    </div>
+</nav>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center" *ngIf="showMenu">
     <div class="navbar-brand-container">     
     </div>

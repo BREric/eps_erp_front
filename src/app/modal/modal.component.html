@@ -1,0 +1,8 @@
+<div *ngIf="showModal" class="modal-container">
+    <div class="modal-content">
+      <h2>Detalles</h2>
+      <p>{{ details | json }}</p> <!-- Puedes mostrar los detalles como desees -->
+      <button (click)="close()">Cerrar</button>
+    </div>
+  </div>
+  

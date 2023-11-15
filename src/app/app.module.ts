@@ -30,6 +30,12 @@ import { HomeLayoutComponent } from './views/inicio/home-layout/home-layout.comp
 import { GestionAdminComponent } from './views/administrador/gestion-admin/gestion-admin.component';
 import { HistorialAdminComponent } from './views/administrador/historial-admin/historial-admin.component';
 import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
+import { ModalComponent } from './modal/modal.component';
+import { ConfiguracionPacienteComponent } from './views/paciente/configuracion-paciente/configuracion-paciente.component';
+import { PqrsPacienteComponent } from './views/paciente/pqrs-paciente/pqrs-paciente.component';
+import { MenuPacienteComponent } from './views/paciente/menu-paciente/menu-paciente.component';
+import { CitasPacienteComponent } from './views/paciente/citas-paciente/citas-paciente.component';
+import { HistorialPacienteComponent } from './views/paciente/historial-paciente/historial-paciente.component';
 
 
 @NgModule({
@@ -60,6 +66,12 @@ import { ConfiguracionAdminComponent } from './views/administrador/configuracion
     GestionAdminComponent,
     HistorialAdminComponent,
     ConfiguracionAdminComponent,
+    ModalComponent,
+    ConfiguracionPacienteComponent,
+    PqrsPacienteComponent,
+    MenuPacienteComponent,
+    CitasPacienteComponent,
+    HistorialPacienteComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,45 @@
             <input type="text" class="form-control" placeholder="Nombre de usuario" required>
         </div>
         <div class="form-group">
+            <input type="number" class="form-control" placeholder="Cedula (sin puntos, ni comas, ni espacios)" required>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Teléfono" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ciudad de residencia" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Alergias" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="EPS Afiliada" required>
+        </div>
+        <div class="form-group">
+            <label for="status">Tipo de sangre</label>
+            <select id="status">
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="born-time">Fecha de nacimiento</label>
+            <input type="date" class="form-control" placeholder="Fecha de nacimiento" required>
+        </div>
+        <div class="form-group profile-pic-group">
+            <label for="profile-pic">Foto de perfil:</label>
+            <input type="file" id="profile-pic" name="profile-pic" (change)="onFileSelected($event)">
+            <div class="profile-pic-preview" (click)="onProfilePicClick($event)">
+                <img [src]="profilePicUrl" alt="Imagen de perfil">
+              </div>          
+          </div>
+        <div class="form-group">
             <input type="email" class="form-control" placeholder="Correo electrónico" required>
         </div>
         <div class="form-group">

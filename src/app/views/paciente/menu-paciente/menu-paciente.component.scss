@@ -1,0 +1,82 @@
+/* home.component.scss */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.home-container {
+    background-image: url('/assets/menu-p.jpg'); // Cambia esto a la ruta de tu imagen
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+
+     // Aplica la animación a cada elemento del formulario
+     * {
+        animation: slide-up 1s ease forwards;
+    }
+
+    
+
+    .title {
+        /* Aumenta el tamaño de la fuente del título */
+        font-size: 2em;
+        /* Agrega una sombra de texto para mejorar la legibilidad contra la imagen de fondo */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    
+      .label {
+        /* Aumenta el tamaño de la fuente de la etiqueta */
+        font-size: 1.5em;
+        color: #34495E;
+        /* Agrega un margen inferior para separar la etiqueta de los botones */
+        margin-bottom: 20px;
+        /* Agrega una sombra de texto para mejorar la legibilidad contra la imagen de fondo */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    
+      .buttons {
+        /* Configura los botones como una caja flexible para distribuirlos uniformemente */
+        display: flex;
+        /* Agrega un espacio entre los botones */
+        gap: 20px;
+    
+        .btn {
+          /* Estiliza los botones */
+          padding: 10px 20px;
+          font-size: 1em;
+          color: #fff;
+          background-color: #0077B6;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.5s ease;
+  
+          
+    
+          /* Cambia el color de fondo de los botones al pasar el cursor sobre ellos */
+          &:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+          }
+        }
+      }
+
+
+    
+}
+
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate-X(0);
+        opacity: 1;
+    }
+}
+

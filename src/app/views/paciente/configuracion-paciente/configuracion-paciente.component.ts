@@ -1,18 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+  selector: 'app-configuracion-paciente',
+  templateUrl: './configuracion-paciente.component.html',
+  styleUrls: ['./configuracion-paciente.component.scss']
 })
-export class SignupComponent implements OnInit{
-
-  SignupForm!:FormGroup;
-  constructor(private formBuilder: FormBuilder){ }
-  ngOnInit(): void {
-
-  }
+export class ConfiguracionPacienteComponent {
 
   profilePicUrl = '/assets/profile-user.jpg';
 
@@ -34,4 +27,5 @@ export class SignupComponent implements OnInit{
       reader.readAsDataURL(file);
     }
   }
+
 }

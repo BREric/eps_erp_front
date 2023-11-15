@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-pqrs-admin',
   template: `<div>Menu Admin Component</div>`,
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pqrs-admin.component.scss']
 })
 export class PqrsAdminComponent {
+
 
 }
