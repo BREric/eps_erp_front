@@ -1,1 +1,52 @@
-<p>pqrs-paciente works!</p>
+<div class="container">
+  <h1 class="title">PQRS del Paciente</h1>
+  
+  <!-- Formulario para crear una nueva PQRS -->
+  <form class="pqrs-form">
+    <div class="form-group">
+      <label for="atencion">Atención:</label>
+      <select id="atencion" name="atencion">
+        <!-- Opciones para seleccionar la atención específica -->
+        <option value="atencion1">Atención 1</option>
+        <option value="atencion2">Atención 2</option>
+        <!-- Agrega más opciones según sea necesario -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="detalle">Detalle del PQRS:</label>
+      <textarea id="detalle" name="detalle" rows="4"></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Enviar PQRS</button>
+  </form>
+
+  <!-- Historial de PQRS del paciente -->
+  <div class="historial-container">
+    <h2 class="historial-title">Historial de PQRS</h2>
+    <!-- Aquí se mostrarían las peticiones pasadas y su estado -->
+    <div class="pqrs-item">
+      <p>Atención: Atención 1</p>
+      <p>Fecha de Creación: 01/01/2023</p>
+      <p>Detalle: Detalle de la petición</p>
+      <p>Estado: Activa</p>
+      <!-- Agrega más detalles según sea necesario -->
+      <label for="btn-modal">Detalles</label>
+    </div>
+    <!-- Repite la estructura para más peticiones del historial -->
+  </div>
+
+  <input type="checkbox" id = "btn-modal">
+    <div class = "container-modal">
+      <div class = "content-modal">
+        <h2>Detalles de la PQRS</h2>
+        <p> Aqui van los detalles de la PQRS que ha realizado el paciente</p>
+        <input type="text" id="text-respuesta" placeholder= "Aqui puedes respoder la PQRS">
+        <div class = "btn-cerrar">
+          <label for="btn-modal">Cerrar</label>
+          <label for="btn-respuesta">Responder</label>
+        </div>
+      </div>
+      <label for = "btn-modal" class = "cerrar-modal">
+      </label>
+    </div>
+
+</div>

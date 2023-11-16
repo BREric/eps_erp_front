@@ -1,32 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-configuracion-paciente',
-  templateUrl: './configuracion-paciente.component.html',
-  styleUrls: ['./configuracion-paciente.component.scss']
+  selector: 'app-configuracion-medico',
+  templateUrl: './configuracion-medico.component.html',
+  styleUrls: ['./configuracion-medico.component.scss']
 })
-export class ConfiguracionPacienteComponent {
+export class ConfiguracionMedicoComponent {
 
-  //--modal
-
-  showConfirmationModal = false;
-
-  openConfirmationModal() {
-    this.showConfirmationModal = true;
-  }
-
-  onConfirmDelete() {
-    // Lógica para eliminar la cuenta
-    this.showConfirmationModal = false;
-  }
-
-  onCancelDelete() {
-    this.showConfirmationModal = false;
-  }
-
-  //--modal
-
-  profilePicUrl = '/assets/profile-user.jpg';
+  profilePicUrl = '/assets/home-doc4k.jpg';
 
   onProfilePicClick(event: Event): void {
     const fileInput = document.querySelector('#profile-pic') as HTMLInputElement;

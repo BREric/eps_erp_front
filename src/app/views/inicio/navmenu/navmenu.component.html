@@ -3,15 +3,19 @@
     </div>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/administrador" routerLinkActive="active">
                 <i class="fa-solid fa-house"></i> Home administrador
-            </a>
+            </a></li>
+            <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/administrador/gestion" routerLinkActive="active">
-                <i class="fa-solid fa-list-check"></i> Gestion</a>
+                <i class="fa-solid fa-list-check"></i> Gestion</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/administrador/pqrs" routerLinkActive="active">
-                <i class="fa-solid fa-person-circle-question"></i> PQRS</a>
+                <i class="fa-solid fa-person-circle-question"></i> PQRS</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/administrador/historial" routerLinkActive="active">
-                <i class="fa-solid fa-notes-medical"></i> Historal</a>
+                <i class="fa-solid fa-notes-medical"></i> Historal</a></li>
             
         </div>
     </div>
@@ -22,15 +26,45 @@
     </div>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/paciente" routerLinkActive="active">
                 <i class="fa-solid fa-house"></i> Home paciente
-            </a>
+            </a></li>
+            <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/paciente/citas" routerLinkActive="active">
-                <i class="fa-solid fa-hospital-user"></i> Citas</a>
+                <i class="fa-solid fa-hospital-user"></i> Citas</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/paciente/pqrs" routerLinkActive="active">
-                <i class="fa-solid fa-person-circle-question"></i> PQRS</a>
+                <i class="fa-solid fa-person-circle-question"></i> PQRS</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/paciente/historial" routerLinkActive="active">
-                <i class="fa-solid fa-notes-medical"></i> Historal</a>
+                <i class="fa-solid fa-notes-medical"></i> Historal</a></li>
+            
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center" *ngIf="showMenuMedico">
+    <div class="navbar-brand-container">     
+    </div>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="/medico" routerLinkActive="active">
+                <i class="fa-solid fa-house"></i> Home medico
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="/medico/citas" routerLinkActive="active">
+                <i class="fa-solid fa-hospital-user"></i> Citas
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="/medico/disponibilidad" routerLinkActive="active">
+                <i class="fa-solid fa-clipboard"></i> Disponibilidad</a></li>
+                <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="/medico/historial" routerLinkActive="active">
+                <i class="fa-solid fa-notes-medical"></i> Historal</a></li>
             
         </div>
     </div>
@@ -41,20 +75,30 @@
     </div>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">
                 <i class="fa-solid fa-house"></i> Home
             </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/services" routerLinkActive="active">
                 <i class="fa-solid fa-truck-medical"></i> Services
             </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/people" routerLinkActive="active">
-                <i class="fa-solid fa-user-group"></i> People</a>
+                <i class="fa-solid fa-user-group"></i> People</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/enterprises" routerLinkActive="active">
-                <i class="fa-solid fa-building"></i> Enterprises</a>
+                <i class="fa-solid fa-building"></i> Enterprises</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active">
-                <i class="fa-solid fa-address-book"></i> Contact</a>
+                <i class="fa-solid fa-address-book"></i> Contact</a></li>
+                <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/aboutus" routerLinkActive="active">
-                <i class="fa-regular fa-hospital"></i> About Us</a>
+                <i class="fa-regular fa-hospital"></i> About Us</a></li>
         </div>
     </div>
 </nav>
+
+

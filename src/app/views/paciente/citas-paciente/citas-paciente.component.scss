@@ -55,6 +55,7 @@
 .content-modal .btn-cerrar{
   width: 100%;
   margin-top: 15px;
+  margin-right: 20px;
   display: flex;
   justify-content: flex-end;
 }
@@ -62,6 +63,7 @@
 .content-modal .btn-respuesta{
   width: 100%;
   margin-top: 15px;
+  margin-left: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -126,6 +128,11 @@ label[for="btn-modal"] {
 
     
   }
+
+  .selected {
+    background-color: #ccc; /* Cambia esto al color que quieras */
+  }
+  
  
 
   .table-container {
@@ -158,6 +165,11 @@ label[for="btn-modal"] {
         background-color:#ccc;
 
       }
+
+      .selected{
+        background-color: #ccc; /* Cambia esto al color que quieras */
+      }
+      
 
       button {
         padding: 10px 20px;

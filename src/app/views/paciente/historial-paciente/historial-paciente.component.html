@@ -1,1 +1,37 @@
-<p>historial-paciente works!</p>
+<div class="medical-history">
+    <h2 class="title">Historial Médico</h2>
+  
+    <div class="filters">
+      <label for="doctor-filter">Filtrar por médico:</label>
+      <select id="doctor-filter">
+        <option value="">Todos los médicos</option>
+        <!-- Añade más opciones según los médicos disponibles -->
+      </select>
+  
+      <label for="date-filter">Filtrar por fecha:</label>
+      <input type="date" id="date-filter">
+    </div>
+  
+    <table class="history-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Médico</th>
+          <th>Notas del médico</th>
+          <th>Diagnóstico</th>
+          <th>Tratamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15/11/2023</td>
+          <td>Alfonso Lopez</td>
+          <td>Paciente llega con dolor de cabeza, se le recomienda acetaminofen</td>
+          <td>Migraña</td>
+          <td>Acetaminofen cada 8 horas</td>
+        </tr>
+        <!-- Añade filas para cada consulta en el historial médico -->
+      </tbody>
+    </table>
+  </div>
+  

@@ -11,6 +11,8 @@ export class NavLoginComponent implements OnInit{
   showLogo: boolean;
   showLoginAdmin: boolean;
   showLoginPaciente: boolean;
+  showLoginMedico: boolean;
+  
 
   constructor(private router: Router) {}
 
@@ -30,6 +32,10 @@ export class NavLoginComponent implements OnInit{
         this.showLoginPaciente = this.router.url == '/paciente' || this.router.url == '/paciente/pqrs'
         || this.router.url == '/paciente/citas' || this.router.url == '/paciente/configuracion'
         || this.router.url == '/paciente/historial';
+
+        this.showLoginMedico = this.router.url == '/medico' || this.router.url == '/medico/disponibilidad'
+        || this.router.url == '/medico/citas' || this.router.url == '/medico/configuracion'
+        || this.router.url == '/medico/historial';
       }
     });
     

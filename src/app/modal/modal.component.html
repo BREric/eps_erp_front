@@ -1,8 +1,8 @@
-<div *ngIf="showModal" class="modal-container">
-    <div class="modal-content">
-      <h2>Detalles</h2>
-      <p>{{ details | json }}</p> <!-- Puedes mostrar los detalles como desees -->
-      <button (click)="close()">Cerrar</button>
-    </div>
+<!-- confirmation-modal.component.html -->
+<div class="modal">
+  <div class="modal-content">
+    <p>¿Estás seguro de eliminar la cuenta?</p>
+    <button (click)="onConfirm()">Aceptar</button>
+    <button (click)="onCancel()">Cancelar</button>
   </div>
-  
+</div>

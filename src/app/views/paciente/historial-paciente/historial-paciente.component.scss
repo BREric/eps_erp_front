@@ -1,0 +1,66 @@
+.medical-history {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    * {
+      animation: slide-up 1s ease forwards;
+  }
+    
+  
+    .title {
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+  
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      label {
+        color: #495057;
+      }
+  
+      select, input {
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        color: #495057;
+      }
+    }
+  
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 10px;
+        border: 1px solid #ced4da;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #e9ecef;
+      }
+  
+      td {
+        background-color: #fff;
+      }
+    }
+  }
+  @keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate-X(0);
+        opacity: 1;
+    }
+  }
+  

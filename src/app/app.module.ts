@@ -36,6 +36,11 @@ import { PqrsPacienteComponent } from './views/paciente/pqrs-paciente/pqrs-pacie
 import { MenuPacienteComponent } from './views/paciente/menu-paciente/menu-paciente.component';
 import { CitasPacienteComponent } from './views/paciente/citas-paciente/citas-paciente.component';
 import { HistorialPacienteComponent } from './views/paciente/historial-paciente/historial-paciente.component';
+import { HistorialMedicoComponent } from './views/medico/historial-medico/historial-medico.component';
+import { MenuMedicoComponent } from './views/medico/menu-medico/menu-medico.component';
+import { DisponibilidadMedicoComponent } from './views/medico/disponibilidad-medico/disponibilidad-medico.component';
+import { CitasMedicoComponent } from './views/medico/citas-medico/citas-medico.component';
+import { ConfiguracionMedicoComponent } from './views/medico/configuracion-medico/configuracion-medico.component';
 
 
 @NgModule({
@@ -72,6 +77,11 @@ import { HistorialPacienteComponent } from './views/paciente/historial-paciente/
     MenuPacienteComponent,
     CitasPacienteComponent,
     HistorialPacienteComponent,
+    HistorialMedicoComponent,
+    MenuMedicoComponent,
+    DisponibilidadMedicoComponent,
+    CitasMedicoComponent,
+    ConfiguracionMedicoComponent,
   ],
   imports: [
     BrowserModule,

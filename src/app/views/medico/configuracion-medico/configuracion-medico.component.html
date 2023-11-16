@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="title">Actuliza tus datos</h1>
+    <h1 class="title">Edita tu cuenta</h1>
     <form class="admin-form">
       <div class="form-group profile-pic-group">
         <label for="profile-pic">Foto de perfil:</label>
@@ -21,12 +21,6 @@
         <input type="password" id="password" name="password">
       </div>
       <button type="submit" class="submit-btn">Actualizar datos</button>
-      <button type="submit" class="delete-btn" (click)="openConfirmationModal()">Eliminar cuenta</button>
-  <app-modal
-    *ngIf="showConfirmationModal"
-    (confirm)="onConfirmDelete()"
-    (cancel)="onCancelDelete()"
-  ></app-modal>
     </form>
   </div>
   
