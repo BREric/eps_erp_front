@@ -30,6 +30,7 @@ import { HomeLayoutComponent } from './views/inicio/home-layout/home-layout.comp
 import { GestionAdminComponent } from './views/administrador/gestion-admin/gestion-admin.component';
 import { HistorialAdminComponent } from './views/administrador/historial-admin/historial-admin.component';
 import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
+import { MedicoService } from './services/medico/medico.service';
 
 
 @NgModule({
@@ -68,7 +69,7 @@ import { ConfiguracionAdminComponent } from './views/administrador/configuracion
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MedicoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

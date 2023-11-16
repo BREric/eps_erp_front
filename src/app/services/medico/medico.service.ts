@@ -7,11 +7,15 @@ import { Medico } from 'src/app/model/medico';
 })
 export class MedicoService {
 
-  private url: string = 'http://localhost:8080/medico';
+  private urlListar: string = 'http://localhost:8081/medico/all';
 
+  private urlRegistrar: string = 'http://localhost:8081/medico/registrar';
   constructor(private http: HttpClient) { }
 
   listar(){
-    this.http.get<Medico[]>(this.url);
+    return this.http.get<Medico[]>(this.urlListar);
+  }
+  createMedico(medico:Medico){
+    return this.http.post<Medico>(this.urlRegistrar,medico);
   }
 }

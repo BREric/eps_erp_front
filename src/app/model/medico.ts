@@ -20,9 +20,9 @@ enum Especialidad {
 
 export class Medico extends Usuario {
   codigo_especialidad: Especialidad; // Tipo de dato enum Especialidad
-  citaMedicoList: Cita[];
-  dia_libreList: DiaLibre[];
-  horarioList: Horario[];
+  //citaMedicoList: Cita[];
+  //dia_libreList: DiaLibre[];
+  //horarioList: Horario[];
 
   /**
   constructor(
