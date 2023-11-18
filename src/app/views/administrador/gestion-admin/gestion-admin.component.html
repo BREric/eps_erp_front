@@ -6,8 +6,8 @@
                 <tr>
                     <th>Nombre</th>
                     <th>Especialización</th>
-                    <th>Hora de Inicio</th>
-                    <th>Hora de Fin</th>
+                    <th>Cedula</th>
+                    <th>Telefono</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,7 +22,8 @@
     </div>
 
 
-    <form [formGroup]="medicoForm" (ngSubmit)="Guardar()" class="doctor-form">
+    <form class="doctor-form" [formGroup]="medicoForm" (ngSubmit)="Guardar()">
+
         <h2 class="form-title">Registrar un Médico</h2>
 
         <div class="form-group">
@@ -32,7 +33,7 @@
 
         <div class="form-group">
             <label for="status">Especialización</label>
-            <select id="status">
+            <select id="status" formControlName="codigo_especialidad">
           <option value="1">Cardiologia</option>
           <option value="2">Pediatría</option>
           <option value="3">Oncología</option>
@@ -49,7 +50,7 @@
 
         <div class="form-group">
             <label for="contraseña">Contraseña</label>
-            <input type="text" formControlName="password" id="password" placeholder="Ingrese la cedula para el médico">
+            <input type="password" formControlName="password" id="password" placeholder="Ingrese la contraseña para el médico">
         </div>
 
         <div class="form-group">
@@ -58,25 +59,33 @@
         </div>
 
         <div class="form-group">
-            <label for="ciudad">Ciudad de residencia</label>
-            <input type="text" formControlName="codigo_ciudad" id="codigo_ciudad" placeholder="Ingrese la ciudad de residencia del médico">
+            <label for="statusCiudad">Ciudad de residencia</label>
+            <select id="statusCiudad" formControlName="codigo_ciudad">
+                <option value="1">Armenia</option>
+                <option value="2">Circasia</option>
+                <option value="3">Salento</option>
+                <option value="4">Filandia</option>
+                <option value="5">Calarca</option>
+                <option value="6">Montenegro</option>
+                <option value="7">Quimbaya</option>
+                <option value="8">Tebaida</option>
+              </select>
         </div>
 
         <div class="form-group">
             <label for="cedula">Cedula</label>
-            <input type="text" formControlName="cedula" id="cedula" placeholder="Ingrese la cedula del médico">
+            <input type="number" formControlName="cedula" id="cedula" placeholder="Ingrese la cedula del médico">
         </div>
 
-        <div class="form-group">
-            <label for="start-time">Hora de Inicio de la Jornada</label>
-            <input type="text" id="start-timeInput">
+        <div class="form-group profile-pic-group">
+            <label for="profile-pic">Foto de perfil:</label>
+            <input type="file" id="profile-pic" formControlName="url_foto" name="profile-pic" (change)="onFileSelected($event)">
+            <div class="profile-pic-preview" (click)="onProfilePicClick($event)">
+                <img [src]="profilePicUrl" alt="Imagen de perfil">
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="end-time">Hora de Fin de la Jornada</label>
-            <input type="text" id="end-timeInput">
-        </div>
 
-        <button (click)="Guardar()" type="submit" class="submit-btn">Registrar Médico</button>
+        <button type="submit" class="submit-btn">Registrar Médico</button>
     </form>
 </div>

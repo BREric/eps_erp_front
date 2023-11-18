@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PqrsAdminComponent } from './pqrs-admin.component';
+
 
 describe('PqrsAdminComponent', () => {
   let component: PqrsAdminComponent;

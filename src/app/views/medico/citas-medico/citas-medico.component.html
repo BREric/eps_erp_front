@@ -1,0 +1,76 @@
+<div class="container">
+    <h1 class="title">Citas Pendientes</h1>
+  
+    <!-- Lista de citas pendientes para el día actual -->
+    <div class="citas-list">
+      <div class="cita-item">
+        <p>Paciente: Melkin Ramirez</p>
+        <p>Fecha: 01/01/2023</p>
+        <label for="btn-modal">Atender</label>
+      </div>
+      <!-- Repite la estructura para más citas pendientes -->
+    </div>
+
+    <!-- MODAL-->
+    <input type="checkbox" id = "btn-modal">
+    <div class = "container-modal">
+      <div class = "content-modal">
+        <h2>Detalles de la cita</h2>
+        <table class="history-table">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Médico</th>
+                <th>Notas del médico</th>
+                <th>Diagnóstico</th>
+                <th>Tratamiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15/11/2023</td>
+                <td>Alfonso Lopez</td>
+                <td>Paciente llega con dolor de cabeza, se le recomienda acetaminofen</td>
+                <td>Migraña</td>
+                <td>Acetaminofen cada 8 horas</td>
+              </tr>
+              <!-- Añade filas para cada consulta en el historial médico -->
+            </tbody>
+          </table>
+        <input type="text" id="text-respuesta" placeholder= "Aqui puedes ingresar tus notas medicas">
+        <input type="text" id="text-respuesta" placeholder= "Ingresa el diagnostico y tratamiento">
+        <div class = "btn-cerrar">
+          <label for="btn-modal">Cerrar</label>
+          <label for="btn-respuesta">Responder</label>
+        </div>
+      </div>
+      <label for = "btn-modal" class = "cerrar-modal">
+      </label>
+    </div>
+    <!-- MODAL-->
+  
+  
+
+    <div class="futuras-container">
+        <h1 class="title">Agenda de Citas Futuras</h1>
+        <div class="agenda">
+          <div class="date">Fecha: 01/12/2023</div>
+          <ul class="appointments">
+            <li class="appointment">Paciente: Juan Perez</li>
+            <li class="appointment">Hora: 10:00 AM</li>
+            <li class="appointment">Motivo: Chequeo general</li>
+          </ul>
+        </div>
+        <div class="agenda">
+          <div class="date">Fecha: 02/12/2023</div>
+          <ul class="appointments">
+            <li class="appointment">Paciente: María Rodriguez</li>
+            <li class="appointment">Hora: 02:30 PM</li>
+            <li class="appointment">Motivo: Resultados de análisis</li>
+          </ul>
+        </div>
+      </div>
+      
+    
+  </div>
+  

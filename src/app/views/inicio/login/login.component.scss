@@ -1,6 +1,6 @@
 /* login.component.scss */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .login-container {
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
         max-width: 100%;
         height: auto;
@@ -26,17 +25,15 @@
     }
 }
 
-.container{
+.container {
     flex: 1;
 }
-
 
 .login-form {
     width: 500px; // Ajusta esto según tus necesidades
     padding: 50px;
     border-radius: 15px;
     background-color: white;
-    
     // Aplica la animación a cada elemento del formulario
     * {
         animation: slide-up 1s ease forwards;

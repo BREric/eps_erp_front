@@ -3,25 +3,28 @@
         <img src="/assets/logo.png" alt="Logo de la empresa">
     </div>
     <div class="container">
-    <form class="login-form">
-        <h2>Iniciar sesión</h2>
-        <div class="form-group">
-            <input type="email" formControlName="correo" placeholder="Correo electrónico" id="correo">
-        </div>
-        <div class="form-group">
-            <input type="password" formControlName="password" placeholder="Contraseña" id="password">
-        </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-        <input type="checkbox" class="form-check-input small-checkbox">
-        Mantenerme registrado
-      </label>
-        </div>
-        <p class="text-right"><a href="/forgotpassword" class="forgot-password">¿Olvidaste tu contraseña?</a></p>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-        </div>
-        <p class="text-center"><a href="/signup" class="go-to-signup">¿No tienes una cuenta? Regístrate</a></p>
-    </form>
+        <!-- Add formGroup directive to your form element -->
+        <form class="login-form" [formGroup]="cuentaForm" (ngSubmit)="login()">
+            <h2>Iniciar sesión</h2>
+            <div class="form-group">
+                <!-- Add formControlName to your input elements -->
+                <input type="email" formControlName="correo" placeholder="Correo electrónico" id="correo">
+            </div>
+            <div class="form-group">
+                <!-- Add formControlName to your input elements -->
+                <input type="password" formControlName="password" placeholder="Contraseña" id="password">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input small-checkbox">
+                  Mantenerme registrado
+              </label>
+            </div>
+            <p class="text-right"><a href="/forgotpassword" class="forgot-password">¿Olvidaste tu contraseña?</a></p>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            </div>
+            <p class="text-center"><a href="/signup" class="go-to-signup">¿No tienes una cuenta? Regístrate</a></p>
+        </form>
     </div>
 </div>

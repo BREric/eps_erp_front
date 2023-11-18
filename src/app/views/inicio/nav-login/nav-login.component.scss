@@ -31,11 +31,24 @@
 
 .nav-item {
     a {
-      display: flex;
-      align-items: center;
-  
-      i {
-        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        text-shadow: 0ch;
+        transition: transform 0.2s ease, color 0.2s ease;
+    
+        i {
+          margin-right: 5px;
+          transition: transform 0.2s ease, color 0.2s ease;
+        }
+    
+        &:hover {
+          transform: scale(1.1);
+          color: #0077B6;
+          i {
+            transform: scale(1.1);
+            color: #007bff;
+          }
+        }
       }
-    }
   }
+  

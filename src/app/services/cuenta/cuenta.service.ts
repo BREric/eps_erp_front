@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, catchError, throwError } from 'rxjs';
 import { Cuenta } from 'src/app/model/cuenta';
+import { Paciente } from 'src/app/model/paciente';
 
 @Injectable({
   providedIn: 'root'
@@ -9,13 +10,26 @@ import { Cuenta } from 'src/app/model/cuenta';
 export class CuentaService {
   private _userType = new BehaviorSubject<'menu-admin' | 'medico' | 'paciente' | 'none'>('none');
   userType = this._userType.asObservable();
-  private baseURL = "http://localhost:8081/cuentas/login/";
+  private baseURL = "http://localhost:8081/cuentas/login";
+
+  private signupURL = "http://localhost:8081/paciente/signup";
 
   constructor(private httpClient: HttpClient) { }
 
   login(cuenta: Cuenta):Observable<object>{
     console.log(cuenta);
     return this.httpClient.post(this.baseURL, cuenta);
+  }
+
+  signup(cuenta: Paciente): Observable<object> {
+    return this.httpClient.post(this.signupURL, cuenta)
+    .pipe(
+      catchError((error: HttpErrorResponse) => {
+        console.error('Signup failed:', error);
+        return throwError('Something went wrong. Please try again later.');
+      })
+    );
+
   }
 
   setUserType(userType: 'menu-admin' | 'medico' | 'paciente' | 'none') {

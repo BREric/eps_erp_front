@@ -1,0 +1,66 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto; /* Ajusta el margen superior según tus necesidades */
+
+    * {
+        animation: slide-up 1s ease forwards;
+    }
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .availability-form {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px; /* Agrega margen superior al formulario */
+  
+    .form-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    }
+  
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077B6;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate-X(0);
+        opacity: 1;
+    }
+  }
+  
+  

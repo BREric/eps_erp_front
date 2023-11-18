@@ -18,4 +18,6 @@ export class MedicoService {
   createMedico(medico:Medico){
     return this.http.post<Medico>(this.urlRegistrar,medico);
   }
+
+
 }

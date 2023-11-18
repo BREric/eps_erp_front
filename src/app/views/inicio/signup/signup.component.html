@@ -3,24 +3,83 @@
         <img src="/assets/logo.png" alt="Logo de la empresa">
     </div>
     <div class="container">
-    <form class="signup-form">
-        <h2>Registrarse</h2>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Nombre de usuario" required>
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Correo electrónico" required>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="Contraseña" required>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Registrarse</button>
-        </div>
-        <p class="text-center"><a href="/login" class="already-account">¿Ya tienes una cuenta?</a></p>
-    </form>
+        <form class="signup-form" [formGroup]="SignupForm" (ngSubmit)="signup()">
+            <h2>Registrarse</h2>
+            <div class="form-group">
+                <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <input type="number" formControlName="cedula" class="form-control" placeholder="Cedula (sin puntos, ni comas, ni espacios)" required>
+            </div>
+            <div class="form-group">
+                <input type="number" formControlName="telefono" class="form-control" placeholder="Teléfono" required>
+            </div>
+            <div class="form-group">
+                <label for="statusEps">EPS Afiliada</label>
+                <select id="statusEps" formControlName="codigo_eps">
+              <option value="1">Medimas</option>
+              <option value="2">Sura</option>
+              <option value="3">Sanitas</option>
+              <option value="4">SOS</option>
+              <option value="5">Nueva eps</option>
+              <option value="6">Comfamiliar</option>
+              <option value="7">Comfacundi</option>
+              <option value="8">SaludCoop</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <input type="text" formControlName="alergias" class="form-control" placeholder="Alergias" required>
+            </div>
+            <div class="form-group">
+                <label for="statusSangre">Tipo de sangre</label>
+                <select id="statusSangre" formControlName="codigo_tipo_sangre">
+              <option value="1">A+</option>
+              <option value="2">A-</option>
+              <option value="3">B+</option>
+              <option value="4">B-</option>
+              <option value="5">O+</option>
+              <option value="6">O-</option>
+              <option value="7">AB+</option>
+              <option value="8">AB-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="statusCiudad">Ciudad de residencia</label>
+                <select id="statusCiudad" formControlName="codigo_ciudad">
+              <option value="1">Armenia</option>
+              <option value="2">Circasia</option>
+              <option value="3">Salento</option>
+              <option value="4">Filandia</option>
+              <option value="5">Calarca</option>
+              <option value="6">Montenegro</option>
+              <option value="7">Quimbaya</option>
+              <option value="8">Tebaida</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="born-time">Fecha de nacimiento</label>
+                <input type="date" formControlName="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento" required>
+            </div>
+            <div class="form-group profile-pic-group">
+                <label for="profile-pic">Foto de perfil:</label>
+                <input type="file" id="profile-pic" formControlName="url_foto" name="profile-pic" (change)="onFileSelected($event)">
+                <div class="profile-pic-preview" (click)="onProfilePicClick($event)">
+                    <img [src]="profilePicUrl" alt="Imagen de perfil">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" formControlName="correo" class="form-control" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="password" formControlName="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <input type="password" formControlName="confirmPassword" class="form-control" placeholder="Confirmar contraseña" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </div>
+            <p class="text-center"><a href="/login" class="already-account">¿Ya tienes una cuenta?</a></p>
+        </form>
     </div>
 </div>

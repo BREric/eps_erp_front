@@ -31,7 +31,17 @@ import { GestionAdminComponent } from './views/administrador/gestion-admin/gesti
 import { HistorialAdminComponent } from './views/administrador/historial-admin/historial-admin.component';
 import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
 import { MedicoService } from './services/medico/medico.service';
-
+import { ModalComponent } from './modal/modal.component';
+import { ConfiguracionPacienteComponent } from './views/paciente/configuracion-paciente/configuracion-paciente.component';
+import { PqrsPacienteComponent } from './views/paciente/pqrs-paciente/pqrs-paciente.component';
+import { MenuPacienteComponent } from './views/paciente/menu-paciente/menu-paciente.component';
+import { CitasPacienteComponent } from './views/paciente/citas-paciente/citas-paciente.component';
+import { HistorialPacienteComponent } from './views/paciente/historial-paciente/historial-paciente.component';
+import { HistorialMedicoComponent } from './views/medico/historial-medico/historial-medico.component';
+import { MenuMedicoComponent } from './views/medico/menu-medico/menu-medico.component';
+import { DisponibilidadMedicoComponent } from './views/medico/disponibilidad-medico/disponibilidad-medico.component';
+import { CitasMedicoComponent } from './views/medico/citas-medico/citas-medico.component';
+import { ConfiguracionMedicoComponent } from './views/medico/configuracion-medico/configuracion-medico.component';
 
 @NgModule({
   declarations: [
@@ -61,13 +71,25 @@ import { MedicoService } from './services/medico/medico.service';
     GestionAdminComponent,
     HistorialAdminComponent,
     ConfiguracionAdminComponent,
+    ModalComponent,
+    ConfiguracionPacienteComponent,
+    PqrsPacienteComponent,
+    MenuPacienteComponent,
+    CitasPacienteComponent,
+    HistorialPacienteComponent,
+    HistorialMedicoComponent,
+    MenuMedicoComponent,
+    DisponibilidadMedicoComponent,
+    CitasMedicoComponent,
+    ConfiguracionMedicoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [MedicoService],
   bootstrap: [AppComponent]

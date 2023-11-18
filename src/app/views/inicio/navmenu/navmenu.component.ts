@@ -14,6 +14,8 @@ import { NavigationEnd, Router } from '@angular/router';
 export class NavmenuComponent implements OnInit{
   showMenu: boolean;
   showMenuAdmin: boolean;
+  showMenuPaciente: boolean;
+  showMenuMedico: boolean;
 
   constructor(private router: Router) {}
 
@@ -29,6 +31,14 @@ export class NavmenuComponent implements OnInit{
         this.showMenuAdmin = this.router.url == '/administrador' || this.router.url == '/administrador/pqrs'
         || this.router.url == '/administrador/gestion' || this.router.url == '/administrador/configuracion'
         || this.router.url == '/administrador/historial';
+
+        this.showMenuPaciente = this.router.url == '/paciente' || this.router.url == '/paciente/pqrs'
+        || this.router.url == '/paciente/citas' || this.router.url == '/paciente/configuracion'
+        || this.router.url == '/paciente/historial';
+
+        this.showMenuMedico = this.router.url == '/medico' || this.router.url == '/medico/disponibilidad'
+        || this.router.url == '/medico/citas' || this.router.url == '/medico/configuracion'
+        || this.router.url == '/medico/historial';
       }
     });
   }

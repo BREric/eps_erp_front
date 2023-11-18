@@ -1,0 +1,227 @@
+/* Estilos generales para la página */
+
+
+#btn-modal{
+  display: none;
+}
+.container-modal{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba( 144, 148, 150 , 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal{
+
+  display: flex;
+
+}
+
+.content-modal{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+
+  input[type="text"]#text-respuesta{
+    width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        transition: box-shadow 0.3s ease, transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        }
+  }
+}
+
+.content-modal h2{
+  margin-bottom: 15px;
+}
+
+.content-modal p{
+  margin-bottom: 15px 0px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-modal .btn-cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-modal .btn-respuesta{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-modal .btn-cerrar label{
+  padding: 7px 10px;
+  color: #fff;
+        background-color: #0077B6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #0056b3;
+        }
+
+}
+
+.content-modal .btn-respuesta label{
+  padding: 7px 10px;
+  color: #fff;
+        background-color: #0077B6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #0056b3;
+        }
+
+}
+
+.cerrar-modal{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  * {
+    animation: slide-up 1s ease forwards;
+}
+  
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de PQRS */
+.pqrs-form {
+  margin-bottom: 20px;
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    select,
+    textarea,
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077B6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+/* Estilos para el historial de PQRS */
+.historial-container {
+  .historial-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  label[for="btn-modal"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0077B6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .pqrs-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .responder-btn {
+      padding: 8px;
+      background-color: #0077B6;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+@keyframes slide-up {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translate-X(0);
+      opacity: 1;
+  }
+}
+

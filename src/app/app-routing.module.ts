@@ -22,6 +22,16 @@ import { HistorialAdminComponent } from './views/administrador/historial-admin/h
 import { ConfiguracionAdminComponent } from './views/administrador/configuracion-admin/configuracion-admin.component';
 import { NavlogoAdminComponent } from './views/administrador/navlogo-admin/navlogo-admin.component';
 import { NavmenuAdminComponent } from './views/administrador/navmenu-admin/navmenu-admin.component';
+import { MenuPacienteComponent } from './views/paciente/menu-paciente/menu-paciente.component';
+import { ConfiguracionPacienteComponent } from './views/paciente/configuracion-paciente/configuracion-paciente.component';
+import { CitasPacienteComponent } from './views/paciente/citas-paciente/citas-paciente.component';
+import { HistorialPacienteComponent } from './views/paciente/historial-paciente/historial-paciente.component';
+import { PqrsPacienteComponent } from './views/paciente/pqrs-paciente/pqrs-paciente.component';
+import { MenuMedicoComponent } from './views/medico/menu-medico/menu-medico.component';
+import { CitasMedicoComponent } from './views/medico/citas-medico/citas-medico.component';
+import { ConfiguracionMedicoComponent } from './views/medico/configuracion-medico/configuracion-medico.component';
+import { DisponibilidadMedicoComponent } from './views/medico/disponibilidad-medico/disponibilidad-medico.component';
+import { HistorialMedicoComponent } from './views/medico/historial-medico/historial-medico.component';
 
 // Rutas de navegacion
 
@@ -44,6 +54,16 @@ const routes: Routes = [
   { path: 'administrador/gestion' , component: GestionAdminComponent},
   { path: 'administrador/historial' , component: HistorialAdminComponent},
   { path: 'administrador/configuracion' , component: ConfiguracionAdminComponent},
+  { path: 'paciente' , component: MenuPacienteComponent},
+  { path: 'paciente/configuracion' , component: ConfiguracionPacienteComponent},
+  { path: 'paciente/citas' , component: CitasPacienteComponent},
+  { path: 'paciente/historial' , component: HistorialPacienteComponent},
+  { path: 'paciente/pqrs' , component: PqrsPacienteComponent},
+  { path: 'medico' , component: MenuMedicoComponent},
+  { path: 'medico/citas' , component: CitasMedicoComponent},
+  { path: 'medico/configuracion' , component: ConfiguracionMedicoComponent},
+  { path: 'medico/disponibilidad' , component: DisponibilidadMedicoComponent},
+  { path: 'medico/historial' , component: HistorialMedicoComponent},
   { path: '**' , component: PagenotfoundComponent}
  
 

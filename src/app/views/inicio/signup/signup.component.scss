@@ -1,11 +1,11 @@
 /* signup.component.scss */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .signup-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 80vh; // Ajusta esto según tus necesidades
+    align-items: flex-end; // Cambia esto para alinear el formulario con la parte inferior de la imagen
+    height: 90vh; // Ajusta esto según tus necesidades
     background-color: white; // Color de fondo, cambia esto según tus preferencias
     border-left: 1px solid #000;
 }
@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
         max-width: 100%;
         height: auto;
@@ -26,30 +25,61 @@
     }
 }
 
-.container{
+.container {
     flex: 1;
 }
 
-
 .signup-form {
-    width: 500px; // Ajusta esto según tus necesidades
+    width: 48%; // Ajusta esto según tus necesidades
     padding: 50px;
+    height: 90vh;
+    margin-top: 150px;
+    /* Ajusta esto para mover el formulario más abajo */
     border-radius: 15px;
     background-color: white;
-     // Aplica la animación a cada elemento del formulario
-     * {
+    // Aplica la animación a cada elemento del formulario
+    * {
         animation: slide-up 1s ease forwards;
     }
-
-    // Estilos para los campos del formulario
-    input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        border: 1px solid #ddd;
+    .profile-pic-group {
+        position: relative;
+        #profile-pic {
+            display: none;
+        }
+        .profile-pic-preview {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
-
+    // Estilos para los campos del formulario
+    input,
+    select {
+        width: 50ch;
+        padding: 10px;
+        //font-size: 0;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        transition: box-shadow 0.3s ease, transform 0.5s ease;
+        margin-bottom: 20px; // Añade un margen inferior para separar los campos de entrada
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+    }
     // Estilos para el botón de envío
     button {
         width: 100%;
@@ -59,12 +89,10 @@
         color: white;
         background-color: #0077B6; // Color del botón, cambia esto según tus preferencias
     }
-
     .already-account {
         color: gray;
         text-decoration: underline;
     }
-
 }
 
 @keyframes slide-up {
