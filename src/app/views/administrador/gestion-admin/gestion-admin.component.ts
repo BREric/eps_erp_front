@@ -79,6 +79,7 @@ constructor(private service:MedicoService, private router: Router,private fb:For
         .subscribe(
           (response) => {
             console.log('Signup successful:', response);
+            location.reload();
           },
           (error) => {
             console.error('Signup failed:', error);
@@ -89,7 +90,7 @@ constructor(private service:MedicoService, private router: Router,private fb:For
     }
 
 
-location.reload();
+
   }
 
 }
