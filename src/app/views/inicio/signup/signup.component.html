@@ -58,7 +58,7 @@
             </div>
             <div class="form-group">
                 <label for="born-time">Fecha de nacimiento</label>
-                <input type="date" formControlName="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento" required>
+                <input type="date" formControlName="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento" [max] = "today" required>
             </div>
             <div class="form-group profile-pic-group">
                 <label for="profile-pic">Foto de perfil:</label>

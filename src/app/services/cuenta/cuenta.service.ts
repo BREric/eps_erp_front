@@ -16,13 +16,13 @@ export class CuentaService {
 
   constructor(private httpClient: HttpClient) { }
 
-  login(cuenta: Cuenta):Observable<object>{
+  login(cuenta: Cuenta):Observable<any>{
     console.log(cuenta);
-    return this.httpClient.post(this.baseURL, cuenta);
+    return this.httpClient.post<any>(this.baseURL, cuenta);
   }
 
   signup(cuenta: Paciente): Observable<object> {
-    return this.httpClient.post(this.signupURL, cuenta)
+    return this.httpClient.post<any>(this.signupURL, cuenta)
     .pipe(
       catchError((error: HttpErrorResponse) => {
         console.error('Signup failed:', error);

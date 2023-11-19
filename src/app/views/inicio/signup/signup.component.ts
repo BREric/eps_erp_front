@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CuentaService } from 'src/app/services/cuenta/cuenta.service';
 
 @Component({
@@ -9,9 +10,12 @@ import { CuentaService } from 'src/app/services/cuenta/cuenta.service';
 })
 export class SignupComponent implements OnInit{
 
+  today = new Date().toISOString().split('T')[0];
+
   SignupForm!:FormGroup;
   constructor(private formBuilder: FormBuilder,
-    private signupService: CuentaService){ }
+    private signupService: CuentaService,
+    private router: Router){ }
     ngOnInit(): void {
       this.SignupForm = this.formBuilder.group({
         nombre: ['', Validators.required],
@@ -58,6 +62,7 @@ export class SignupComponent implements OnInit{
       this.signupService.signup(formData).subscribe(
         (response) => {
           console.log('Signup successful:', response);
+          this.router.navigate(['/paciente']);
         },
         (error) => {
           console.error('Signup failed:', error);
